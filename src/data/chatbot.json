@@ -1,0 +1,81 @@
+{
+  "chatbotQA": [
+    {
+      "question": "hi",
+      "answers": [
+        "Hi there! What would you like to know about your learning progress?"
+      ]
+    },
+    {
+      "question": "hello",
+      "answers": [
+        "Hi! How can I help you with your LMS today?"
+      ]
+    },
+    {
+      "question": "how are you",
+      "answers": [
+        "Doing great! How can I assist you with your courses?"
+      ]
+    },
+    {
+      "question": "what courses am I enrolled in?",
+      "answers": [
+        "You are currently enrolled in React Basics, JavaScript Advanced, Node.js, CSS Mastery, and Data Structures."
+      ]
+    },
+    {
+      "question": "how is my progress in React Basics?",
+      "answers": [
+        "You have completed 4 out of 5 modules in React Basics.",
+        "Your progress is at 80% for the React Basics course."
+      ]
+    },
+    {
+      "question": "what was my score on the Week 3 Quiz for JavaScript Advanced?",
+      "answers": [
+        "You scored 60% on the Week 3 Quiz of JavaScript Advanced.",
+        "You attempted it once."
+      ]
+    },
+    {
+      "question": "what achievements have I earned recently?",
+      "answers": [
+        "You earned the 'Consistent Learner' badge on July 20, 2025.",
+        "You earned the 'Top Quiz Score' badge on August 1, 2025.",
+        "You earned the 'Algorithm Starter' badge on August 7, 2025.",
+        "You earned the 'CSS Pro' badge on August 10, 2025."
+      ]
+    },
+    {
+      "question": "when is my next quiz or project due?",
+      "answers": [
+        "Your upcoming tasks are Week 5 Quiz due August 23, 2025, Project Submission due August 25, 2025, CSS Capstone Project due August 22, 2025, and Data Structures Final Quiz due August 29, 2025."
+      ]
+    },
+    {
+      "question": "how have I performed overall in quizzes?",
+      "answers": [
+        "Your average quiz scores by course are: React Basics 84%, JavaScript Advanced 74%, Node.js 62.5%, CSS Mastery 85%, and Data Structures 76.25%."
+      ]
+    },
+    {
+      "question": "can you show me my recent progress trend?",
+      "answers": [
+        "Your average progress by week is: Week 1 - 16.2%, Week 2 - 21%, Week 3 - 46.5%, Week 4 - 53%, Week 5 - 68.3%, Week 6 - 85%, Week 7 - 88%, and Week 8 - 93%."
+      ]
+    },
+    {
+      "question": "how much of Data Structures have I completed?",
+      "answers": [
+        "You have completed 5 out of 8 modules in Data Structures, which is about 62.5% progress."
+      ]
+    },
+    {
+      "question": "what is my score on CSS Mastery quizzes?",
+      "answers": [
+        "Your CSS Mastery quiz scores are: Week 1 - 85%, Week 2 - 80%, Week 3 - 90%."
+      ]
+    }
+  ]
+}

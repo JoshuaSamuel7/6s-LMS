@@ -1,0 +1,76 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  font-family: "Segoe UI", sans-serif;
+}
+.loginh{
+  color: wheat;
+}
+body{
+    margin: 0;
+    background-color: #FFF0C4;
+    padding: 0;
+  }
+*{
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 70% 10%, rgba(94,252,232, 0.18) 0%, transparent 65%),
+    radial-gradient(circle at 25% 80%, rgba(95,114,189, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+form {
+  width: 380px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+form:hover {
+  transform: translateY(-5px);
+}
+form h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+.login-input {
+  width: 100% ;
+  margin-bottom: 20px!important;
+}
+
+.prompt{
+    margin: 2vh 0;
+}
+.prompt:hover{
+    animation: smooth 1s forwards;
+}
+@keyframes smooth {
+    from{
+        color: inherit;
+    }
+    to{
+        color: red;
+    }
+}
+@media (max-width:480px) {
+  form{
+    width: 90vw;
+  }
+}

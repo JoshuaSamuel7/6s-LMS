@@ -1,0 +1,110 @@
+.dashboard-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f1d;
+  color: #ccc;
+  padding: 20px 40px;
+  min-height: 100vh;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00C49F;
+  text-shadow: 0 0 8px #00C49F;
+}
+
+.cards-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 196, 159, 0.4);
+  color: #00C49F;
+  text-align: center;
+}
+.metric {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.charts-row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.chart-card {
+  flex: 1;
+  min-width: 360px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 25px #00C49F88;
+  color: #ddd;
+  margin: 2vh;
+}
+
+.table-card {
+  max-width: 980px;
+  margin: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.data-table th, .data-table td {
+  padding: 8px;
+}
+.data-table thead {
+  background: #1c1c2e;
+}
+
+.alerts-card {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 25px #FFBB2877;
+  max-width: 980px;
+  margin: 40px auto;
+}
+@media (max-width:768px) {
+  .charts-row{
+    flex-direction: column;
+  }
+}
+@media (max-width:480px) {
+  .dashboard-container{
+    overflow: hidden;
+  }
+  .charts-row{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .chart-card{
+    margin: 0;
+    overflow-y: auto;
+    min-width: 40vw;
+  }
+  .recharts-pie{
+    width: 100vw!important;
+    font-size: 0.8rem;
+  }
+  .recharts-bar{
+    width: 250vw!important;
+    font-size: 0.8rem;
+    text-wrap: wrap;
+  }
+  .chart-card{
+    margin-bottom: 20px;
+  }
+}
