@@ -9,7 +9,7 @@ function AnalyticsChart() {
   const trend=studentData.analytics.progressTrend;
   return (
     <div className="analytics" >
-      <h2>Analytics</h2>
+      <h2>Analytics📈</h2>
       <div className="charts">
       <div className="pie">
         <h3>Course Completion</h3>

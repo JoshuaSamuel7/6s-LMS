@@ -35,7 +35,7 @@ export default function CourseCard({child}) {
         <Typography gutterBottom variant="h5" component="div" fontFamily={"Edu NSW ACT Hand Cursive"} fontWeight={"bold"}>
           {child.title}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }} fontFamily={"Montserrat"}>
+        <Typography variant="body2" sx={{ color: 'text.secondary', fontSize:"0.8rem" }} fontFamily={"Montserrat"}>
            {child.info}
         </Typography>
       </CardContent>

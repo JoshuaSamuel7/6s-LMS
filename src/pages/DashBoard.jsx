@@ -52,7 +52,7 @@ function DashBoard() {
           </AnimatePresence>
         </motion.div>
           <div className="admin-dash">
-            <h2>Course Progress</h2>
+            <h2>Course Progress📊</h2>
             <div className="slider">
               <CardSlider />
             </div>

@@ -8,7 +8,7 @@ function Achievements() {
     <div className='achieve'>
         <Paper elevation={6} sx={{backgroundColor:"#93DA97"}}>
             <Box sx={{padding:"5vh 0"}}>
-                <Typography variant='h4' textAlign={'center'} fontWeight={'bold'} fontFamily={"Sacramento,sans-serif"}color='#E8FFD7'>Achievements</Typography>
+                <Typography variant='h4' textAlign={'center'} fontWeight={'bold'} fontFamily={"Sacramento,sans-serif"}color='#E8FFD7'>Achievements🥇</Typography>
                 {studentData.achievements.map((val,key)=>{
                     return(
                         <ul style={{listStyle:'none'}}>

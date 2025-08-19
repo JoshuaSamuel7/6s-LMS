@@ -23,16 +23,16 @@ export default function CourseAnalytics() {
     <>
     <Navbar/>
     <Box sx={{ maxWidth: 1200, margin: "2rem auto", padding: 2 }}>
-      <Card>
+      <Card sx={{background: "radial-gradient(circle at top left, #0f0c29, #302b63, #24243e)",borderRadius: "20px",boxShadow: "0 0 30px rgba(124,58,237,0.6)",}}>
         <CardContent>
-          <Typography variant="h4" gutterBottom fontWeight="bold" textAlign={"center"}>
+          <Typography variant="h4" gutterBottom fontWeight="bold" textAlign={"center"}sx={{background: "linear-gradient(90deg, #7c3aed, #67e8f9)",WebkitBackgroundClip: "text",WebkitTextFillColor: "transparent",textShadow: "0 0 15px #7c3aed, 0 0 30px rgba(103,232,249,0.8)",}} >
             {course.name}
           </Typography>
           <Box sx={{ marginBottom: 3 }}>
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom color="#67e8f9">
               Progress: {course.progress.completed} / {course.progress.total} Modules
             </Typography>
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom color="#67e8f9">
               Progress Percentage : {progressPercent}%
             </Typography>
             <LinearProgress variant="determinate" value={progressPercent} sx={{ height: 10, borderRadius: 5 }} />
@@ -56,23 +56,23 @@ export default function CourseAnalytics() {
                 </ResponsiveContainer>
               </Box>
             </Box>
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h6" gutterBottom color="#67e8f9">
             Quiz Scores
           </Typography>
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell>Quiz</TableCell>
-                <TableCell>Score</TableCell>
-                <TableCell>Attempts</TableCell>
+                <TableCell sx={{color:"#67e8f9"}}>Quiz</TableCell>
+                <TableCell sx={{color:"#67e8f9"}}>Score</TableCell>
+                <TableCell sx={{color:"#67e8f9"}}>Attempts</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {course.table.map((row, idx) => (
                 <TableRow key={idx}>
-                  <TableCell>{row.quiz}</TableCell>
-                  <TableCell>{row.score}</TableCell>
-                  <TableCell>{row.attempts}</TableCell>
+                  <TableCell sx={{color:"#67e8f9"}}>{row.quiz}</TableCell>
+                  <TableCell sx={{color:"#67e8f9"}}>{row.score}</TableCell>
+                  <TableCell sx={{color:"#67e8f9"}}>{row.attempts}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

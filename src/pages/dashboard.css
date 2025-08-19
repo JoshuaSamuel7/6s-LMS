@@ -37,9 +37,7 @@
 .upcoming {
   width: 40vw;
 }
-.bar,
-.pie,
-.line {
+.bar,.pie,.line {
   min-width: 40vw;
   flex-grow: 1;
   gap: 15vw;
@@ -55,6 +53,12 @@
   background-color: #121624;
   margin: 0 -5vw 0;
   padding: 10vh 2vw;
+}
+.analytics h2{
+    text-shadow:
+    0 0 10px #1c6ea4 , 
+    0 0 10px #1c6ea4 ;
+    filter:none;
 }
 .charts {
   display: flex;
