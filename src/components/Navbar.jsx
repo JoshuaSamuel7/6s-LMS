@@ -23,7 +23,7 @@ export default function Navbar() {
           <Typography variant="h6" component="div" color='#fffffe '>
             Dashboard
           </Typography>
-          <Typography  textAlign="center"variant='h5'color='#fffffe ' fontFamily={"Mozilla Headline,sans-serif"} letterSpacing={"8px"}> <LocalLibraryIcon/> LMS</Typography>
+          <Typography  textAlign="center"variant='h5'color='#fffffe ' fontFamily={"Mozilla Headline,sans-serif"} letterSpacing={"8px"} onClick={()=>navigate("/")}> <LocalLibraryIcon/> LMS</Typography>
           <Button type='submit' onClick={handleLogout} variant='contained' color='error' sx={{backgroundColor:"crimson ","&:hover":{backgroundColor:'#eebbc3'}}}>Logout</Button>
         </Toolbar>
       </AppBar>

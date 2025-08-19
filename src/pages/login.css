@@ -29,7 +29,8 @@ body{
     margin: 0;
     background-color: #FFF0C4;
     padding: 0;
-  }
+    cursor: url('/cursor.png'),auto;
+}
 *{
   box-sizing: border-box;
 }
