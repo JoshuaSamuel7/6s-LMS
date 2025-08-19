@@ -1,11 +1,18 @@
 import React from 'react'
 import Slider from'react-slick';
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from '@mui/material/Card';
 import CourseCard from './Card';
 export default function CardSlider() {
+    const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 var settings = {
   dots: true,
   infinite: false,
