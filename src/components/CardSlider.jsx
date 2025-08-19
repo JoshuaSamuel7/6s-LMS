@@ -6,17 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 import Card from '@mui/material/Card';
 import CourseCard from './Card';
 export default function CardSlider() {
-    var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-  { breakpoint: 1024, settings: { slidesToShow: 2 } },
-  { breakpoint: 600, settings: { slidesToShow: 1 } }
-]
-    }
+  const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  swipeToSlide: true,  
+  touchThreshold: 10,     
+  responsive: [
+    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+    { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }
+  ]
+};
 
 
   return (
