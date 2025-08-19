@@ -37,17 +37,25 @@ export default function CourseAnalytics() {
             </Typography>
             <LinearProgress variant="determinate" value={progressPercent} sx={{ height: 10, borderRadius: 5 }} />
           </Box>
-          <Box sx={{ width: "100%", height: 300, marginBottom: 3 }}>
-            <ResponsiveContainer>
-              <BarChart data={course.chart}>
-                <CartesianGrid stroke="#ccc" />
-                <XAxis dataKey="week" />
-                <YAxis domain={[0, 100]} />
-                <Tooltip />
-                <Bar dataKey="progress" fill="#1976d2" />
-              </BarChart>
-            </ResponsiveContainer>
-          </Box>
+          <Box
+              sx={{
+                width: "100%",
+                overflowX: "auto", 
+                marginBottom: 3,
+              }}
+              >
+              <Box sx={{ minWidth: 500, height: 250 }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={course.chart}>
+                    <CartesianGrid stroke="#ccc" />
+                    <XAxis dataKey="week" />
+                    <YAxis domain={[0, 100]} />
+                    <Tooltip />
+                    <Bar dataKey="progress" fill="#1976d2" />
+                  </BarChart>
+                </ResponsiveContainer>
+              </Box>
+            </Box>
           <Typography variant="h6" gutterBottom>
             Quiz Scores
           </Typography>

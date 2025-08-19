@@ -248,6 +248,10 @@
   .analytics {
     margin: -5vw;
   }
+  .slick-prev::before,
+.slick-next::before {
+  display: none;
+}
   .other {
     flex-direction: column;
     min-width: 70vw;
