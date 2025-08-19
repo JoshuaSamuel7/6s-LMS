@@ -5,20 +5,47 @@ import "slick-carousel/slick/slick-theme.css";
 import Card from '@mui/material/Card';
 import CourseCard from './Card';
 export default function CardSlider() {
-    var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-  { breakpoint: 1024, settings: { slidesToShow: 2 } },
-  { breakpoint: 600, settings: { slidesToShow: 1 } }
-]
-
-  };
+var settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 768, // Tablet
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600, // Mobile landscape
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480, // Mobile portrait
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
   return (
-    <div style={{ width: '90%', margin: 'auto'}}>
+<div style={{ width: '90%', maxWidth: '1200px', margin: 'auto' }}>
     <Slider {...settings}>
         <CourseCard  child={{ id: 0,image:"react.png",title:"React Basics", info:"React is a JavaScript library for building user interfaces using reusable components. It uses a virtual DOM to efficiently update only the parts of the UI that change."}}/>
         <CourseCard child={{id: 1,image:"css.png",title:"CSS Mastery", info:"CSS (Cascading Style Sheets) is used to style HTML elements by controlling colors, fonts, and responsiveness. It separates content to create visually appealing web pages."}}/>
