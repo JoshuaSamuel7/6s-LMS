@@ -332,9 +332,9 @@
   }
   .bot-msg.chart {
     width: 95%; 
-    max-width: 200px; 
+    max-width: 300px; 
     padding: 8px;  
-    height: 25vh; 
+    height: 40vh; 
   }
   .perf{
     height:10vw!important;
