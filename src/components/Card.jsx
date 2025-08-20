@@ -12,7 +12,6 @@ import { useNavigate } from 'react-router';
 export default function CourseCard({child}) {
     const progress=studentData.courses.find(u=> u.name===child.title)?.progress;
     const progval=Math.floor((progress.completed/progress.total)*100);
-    console.log(progval);
     const navigate=useNavigate();
   return (
     <Card sx={{ maxWidth: 345,margin:"4vh 2vw",transition: "transform 0.3s, box-shadow 0.3s","&:hover": {

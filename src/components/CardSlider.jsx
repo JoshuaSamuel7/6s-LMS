@@ -8,7 +8,7 @@ import CourseCard from './Card';
 export default function CardSlider() {
 const [slidesToShow, setSlidesToShow] = React.useState(3);
 
-React.useEffect(() => {
+useEffect(() => {
   const updateSlides = () => {
     if (window.innerWidth < 600) setSlidesToShow(1);
     else if (window.innerWidth < 1024) setSlidesToShow(2);
@@ -28,9 +28,6 @@ const settings = {
   swipeToSlide: true,
   touchThreshold: 10,
 };
-
-
-
   return (
 <div style={{ width: '100%', maxWidth: '1200px', margin: 'auto' }}>
     <Slider {...settings}>

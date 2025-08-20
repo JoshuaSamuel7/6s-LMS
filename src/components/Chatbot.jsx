@@ -7,7 +7,7 @@ import SmartToyIcon from '@mui/icons-material/SmartToy';
 import QuizPerformance from '../charts/QuizPerformance';
 import WeeklyProgress from '../charts/WeeklyProgress';
 function Chatbot() {
-    const [chats,setChats]= useState([{message:"Hi! How may I help You!",sender:"admin"}]);
+    const [chats,setChats]= useState([{message:"Hi! Iam a chatbot. How may I help You!",sender:"admin"}]);
     const [message,setMessage]=useState();
     const suggestions=[{disp:"Courses",question:"what courses am I enrolled in?"},{disp:"Achievements", question:"what achievements have I earned recently?"},{disp:"Performance Chart",question:"show my performance chart"},{disp:"Progress Chart",question:"show my progress chart"}];
     const chatRef=useRef();
